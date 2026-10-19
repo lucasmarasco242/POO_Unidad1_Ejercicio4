@@ -2,14 +2,18 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Calculadora calcula1 = new Calculadora();
+
+        double suma = calcula1.sumar(10.0, 5.0);
+        double resta = calcula1.restar(10.0, 4.0);
+        double multiplicacion = calcula1.multiplicar(3.0, 3.0);
+        double division = calcula1.dividir(20.0, 4.0);
+
+        System.out.println("El resultado de la suma es: " + suma);
+        System.out.println("El resultado de la resta es: " + resta);
+        System.out.println("El resultado de la multiplicación es: " + multiplicacion);
+        System.out.println("El resultado de la división es: " + division);
+
     }
 }
